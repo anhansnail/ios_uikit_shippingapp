@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="frI-xs-AJI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="frI-xs-AJI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,40 +17,43 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="186486295_110938954500785_2492957877677836606_n 1" translatesAutoresizingMaskIntoConstraints="NO" id="vQ1-7J-Ek9">
-                                <rect key="frame" x="66" y="166" width="282" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="186486295_110938954500785_2492957877677836606_n 1" translatesAutoresizingMaskIntoConstraints="NO" id="vQ1-7J-Ek9">
+                                <rect key="frame" x="66" y="162.5" width="282" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="O6C-YQ-4ut"/>
+                                    <constraint firstAttribute="width" constant="282" id="PZT-64-o7n"/>
+                                </constraints>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số điện thoại" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g9d-MY-lvg">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số điện thoại" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g9d-MY-lvg">
                                 <rect key="frame" x="47" y="351" width="325" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="phonePad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mật khẩu" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mrf-CY-3Eu">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mật khẩu" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mrf-CY-3Eu">
                                 <rect key="frame" x="47" y="393" width="325" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ca-YV-7oX">
-                                <rect key="frame" x="45" y="461" width="325" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ca-YV-7oX">
+                                <rect key="frame" x="44.5" y="547.5" width="325" height="45"/>
                                 <color key="backgroundColor" red="0.14509803921568626" green="0.71764705882352942" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="325" id="Jg8-Na-iWu"/>
+                                    <constraint firstAttribute="height" constant="45" id="a9Q-f0-MrP"/>
+                                </constraints>
                                 <size key="titleShadowOffset" width="10" height="10"/>
                                 <state key="normal" title="Đăng nhập">
-                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9N-ja-dyO">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z9N-ja-dyO">
                                 <rect key="frame" x="140" y="531" width="137" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="QUÊN MẬT KHẨU?">
                                             <attributes>
                                                 <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                                <font key="NSFont" metaFont="system" size="16"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 <integer key="NSUnderline" value="1"/>
                                             </attributes>
@@ -59,21 +64,45 @@
                                     <segue destination="v01-eK-3ig" kind="show" id="MIi-Xp-LnK"/>
                                 </connections>
                             </button>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="UEr-9b-JeB">
-                                <rect key="frame" x="47" y="383" width="325" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="UEr-9b-JeB">
+                                <rect key="frame" x="44.5" y="389" width="325" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="qpY-dE-u8d"/>
+                                </constraints>
                             </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="84I-B1-HaG">
-                                <rect key="frame" x="47" y="425" width="325" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" misplaced="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="84I-B1-HaG">
+                                <rect key="frame" x="45" y="426" width="325" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="3aN-QQ-8ao"/>
+                                </constraints>
                             </progressView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g9d-MY-lvg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.8" id="78H-uT-SAt"/>
+                            <constraint firstItem="Z9N-ja-dyO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ABB-aa-fVP"/>
+                            <constraint firstItem="Mrf-CY-3Eu" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="F9g-qj-PM2"/>
+                            <constraint firstItem="7ca-YV-7oX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="JSD-EU-jsd"/>
+                            <constraint firstItem="UEr-9b-JeB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.82" id="K2C-op-5jp"/>
+                            <constraint firstItem="g9d-MY-lvg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.785024" id="LbZ-vF-Phh"/>
+                            <constraint firstItem="UEr-9b-JeB" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ShM-04-Rhv"/>
+                            <constraint firstItem="7ca-YV-7oX" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.2" id="TYk-vZ-PPa"/>
+                            <constraint firstItem="vQ1-7J-Ek9" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="2:4" id="WrN-fn-ZGr"/>
+                            <constraint firstItem="84I-B1-HaG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.02" id="c8r-Ij-xGc"/>
+                            <constraint firstItem="UEr-9b-JeB" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.785024" id="eMe-T1-xzH"/>
+                            <constraint firstItem="Mrf-CY-3Eu" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fVs-KY-h3A"/>
+                            <constraint firstItem="84I-B1-HaG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jbo-nc-m3M"/>
+                            <constraint firstItem="84I-B1-HaG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.785024" id="kel-tW-jGf"/>
+                            <constraint firstItem="vQ1-7J-Ek9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mCz-fE-pxO"/>
+                            <constraint firstItem="Mrf-CY-3Eu" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.785024" id="rmt-Ka-8aP"/>
+                            <constraint firstItem="g9d-MY-lvg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="x68-gv-qwt"/>
+                            <constraint firstItem="Z9N-ja-dyO" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.3" id="zof-xf-qKV"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IdO-uz-0kX">
                         <barButtonItem key="backBarButtonItem" title=" " id="oXN-p6-0Vt"/>
@@ -94,56 +123,88 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="186486295_110938954500785_2492957877677836606_n 1" translatesAutoresizingMaskIntoConstraints="NO" id="DIM-52-QfW">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="186486295_110938954500785_2492957877677836606_n 1" translatesAutoresizingMaskIntoConstraints="NO" id="DIM-52-QfW">
                                 <rect key="frame" x="65" y="163" width="282" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số điện thoại" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w2G-2W-K5F">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số điện thoại" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w2G-2W-K5F">
                                 <rect key="frame" x="46" y="348" width="325" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="XZU-sF-Axf"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="phonePad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số CMND/CCCD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PWf-xY-cq6">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Số CMND/CCCD" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PWf-xY-cq6">
                                 <rect key="frame" x="46" y="390" width="325" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="mIg-48-uzf">
-                                <rect key="frame" x="46" y="380" width="325" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="mIg-48-uzf">
+                                <rect key="frame" x="44.5" y="383" width="325" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Uei-nn-xrR"/>
+                                </constraints>
                             </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="rCK-xg-TVA">
-                                <rect key="frame" x="46" y="422" width="325" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="rCK-xg-TVA">
+                                <rect key="frame" x="46" y="444" width="325" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="7ph-gc-iop"/>
+                                </constraints>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mg-7m-g7c">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mg-7m-g7c">
                                 <rect key="frame" x="48" y="764" width="325" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="si0-xB-XXc"/>
+                                </constraints>
                                 <size key="titleShadowOffset" width="10" height="10"/>
                                 <state key="normal" title="Gửi">
-                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </state>
                                 <connections>
                                     <segue destination="Q8P-CU-T4Z" kind="show" id="XO6-KZ-gkj"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vui lòng điền thông tin cá nhân của bạn để chúng tôi xác minh danh tính của bạn." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiI-Dn-tgZ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Vui lòng điền thông tin cá nhân của bạn để chúng tôi xác minh danh tính của bạn." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiI-Dn-tgZ">
                                 <rect key="frame" x="48" y="432" width="327" height="61"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="61" id="RcD-of-XG1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="D8V-PY-JhY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZiI-Dn-tgZ" firstAttribute="leading" secondItem="D8V-PY-JhY" secondAttribute="leading" constant="48" id="44I-ar-x1S"/>
+                            <constraint firstItem="w2G-2W-K5F" firstAttribute="leading" secondItem="PWf-xY-cq6" secondAttribute="leading" id="45g-Bt-oPO"/>
+                            <constraint firstItem="PWf-xY-cq6" firstAttribute="top" secondItem="w2G-2W-K5F" secondAttribute="bottom" constant="8" symbolic="YES" id="4AJ-Er-Xka"/>
+                            <constraint firstItem="D8V-PY-JhY" firstAttribute="trailing" secondItem="8mg-7m-g7c" secondAttribute="trailing" constant="41" id="6nj-Sm-FQ4"/>
+                            <constraint firstItem="w2G-2W-K5F" firstAttribute="leading" secondItem="D8V-PY-JhY" secondAttribute="leading" constant="46" id="8S6-Ui-Cfp"/>
+                            <constraint firstItem="ZiI-Dn-tgZ" firstAttribute="leading" secondItem="8mg-7m-g7c" secondAttribute="leading" id="AyH-iT-5td"/>
+                            <constraint firstItem="D8V-PY-JhY" firstAttribute="bottom" secondItem="8mg-7m-g7c" secondAttribute="bottom" constant="53" id="FZj-nN-RHz"/>
+                            <constraint firstItem="w2G-2W-K5F" firstAttribute="trailing" secondItem="PWf-xY-cq6" secondAttribute="trailing" id="JCy-lb-q1Q"/>
+                            <constraint firstItem="ZiI-Dn-tgZ" firstAttribute="top" secondItem="PWf-xY-cq6" secondAttribute="bottom" constant="8" symbolic="YES" id="TKA-HL-FC6"/>
+                            <constraint firstItem="w2G-2W-K5F" firstAttribute="leading" secondItem="rCK-xg-TVA" secondAttribute="leading" id="TQA-PS-CJW"/>
+                            <constraint firstItem="w2G-2W-K5F" firstAttribute="top" secondItem="DIM-52-QfW" secondAttribute="bottom" constant="35" id="Tc9-b4-CbI"/>
+                            <constraint firstItem="D8V-PY-JhY" firstAttribute="trailing" secondItem="w2G-2W-K5F" secondAttribute="trailing" constant="43" id="UEg-gb-B7o"/>
+                            <constraint firstItem="D8V-PY-JhY" firstAttribute="trailing" secondItem="ZiI-Dn-tgZ" secondAttribute="trailing" constant="39" id="UH1-UH-i1Q"/>
+                            <constraint firstItem="rCK-xg-TVA" firstAttribute="top" secondItem="mIg-48-uzf" secondAttribute="bottom" constant="60" id="WoB-bf-Fr4"/>
+                            <constraint firstItem="w2G-2W-K5F" firstAttribute="trailing" secondItem="rCK-xg-TVA" secondAttribute="trailing" id="bnX-NR-RX7"/>
+                            <constraint firstItem="ZiI-Dn-tgZ" firstAttribute="top" secondItem="rCK-xg-TVA" secondAttribute="bottom" constant="6" id="h22-FO-aGl"/>
+                            <constraint firstItem="w2G-2W-K5F" firstAttribute="top" secondItem="wK1-ve-psA" secondAttribute="top" constant="348" id="hDE-jD-SLO"/>
+                            <constraint firstItem="DIM-52-QfW" firstAttribute="leading" secondItem="D8V-PY-JhY" secondAttribute="leading" constant="65" id="oUh-5N-R5T"/>
+                            <constraint firstItem="mIg-48-uzf" firstAttribute="width" secondItem="wK1-ve-psA" secondAttribute="width" multiplier="0.785024" id="sBw-sf-zce"/>
+                            <constraint firstItem="D8V-PY-JhY" firstAttribute="trailing" secondItem="DIM-52-QfW" secondAttribute="trailing" constant="67" id="u6p-jf-xqr"/>
+                            <constraint firstItem="mIg-48-uzf" firstAttribute="top" secondItem="w2G-2W-K5F" secondAttribute="bottom" constant="1" id="uVs-Bd-E4D"/>
+                            <constraint firstItem="mIg-48-uzf" firstAttribute="centerX" secondItem="D8V-PY-JhY" secondAttribute="centerX" id="znN-GP-ZKS"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Quên mật khẩu" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="7Rs-w3-vHe">
                         <barButtonItem key="backBarButtonItem" title="  " id="png-Ss-u7V"/>
@@ -169,7 +230,7 @@
                         <color key="barTintColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <color key="textShadowColor" systemColor="systemBrownColor" red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="textShadowColor" systemColor="systemBrownColor"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -197,75 +258,69 @@
                                 <rect key="frame" x="66" y="161" width="282" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dw4-NT-Wfc">
-                                <rect key="frame" x="48" y="764" width="325" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="titleShadowOffset" width="10" height="10"/>
-                                <state key="normal" title="Xác minh">
-                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <segue destination="Tj9-Mk-LCK" kind="show" id="1Zq-jL-j13"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="BEx-eq-DgZ">
-                                <rect key="frame" x="68" y="474" width="34" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="D5h-ZL-Tzz">
-                                <rect key="frame" x="117" y="474" width="34" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Msh-GS-Ipa">
-                                <rect key="frame" x="166" y="474" width="34" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="5Nz-Oe-IJJ">
-                                <rect key="frame" x="215" y="474" width="34" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="WoO-Aa-Lwo">
-                                <rect key="frame" x="266" y="474" width="34" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="C4o-Tz-KFC">
-                                <rect key="frame" x="315" y="474" width="34" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q75-4I-qbW">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpv-Fw-MYr">
+                                <rect key="frame" x="42" y="383" width="330" height="74"/>
+                                <string key="text">Một mã gồm 6 chữ số được gửi đến số điện thoại của bạn, vui lòng nhập trong
+02:00</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="u30-Wd-I46">
+                                <rect key="frame" x="48" y="490" width="328" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="BEx-eq-DgZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="38" height="34"/>
+                                        <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="D5h-ZL-Tzz">
+                                        <rect key="frame" x="58" y="0.0" width="38" height="34"/>
+                                        <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Msh-GS-Ipa">
+                                        <rect key="frame" x="116" y="0.0" width="38" height="34"/>
+                                        <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="5Nz-Oe-IJJ">
+                                        <rect key="frame" x="174" y="0.0" width="38" height="34"/>
+                                        <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="WoO-Aa-Lwo">
+                                        <rect key="frame" x="232" y="0.0" width="38" height="34"/>
+                                        <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="C4o-Tz-KFC">
+                                        <rect key="frame" x="290" y="0.0" width="38" height="34"/>
+                                        <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q75-4I-qbW">
                                 <rect key="frame" x="88" y="532" width="211" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
                                         <fragment content="Không nhận được mã, gửi lại.">
                                             <attributes>
                                                 <color key="NSColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                                <font key="NSFont" metaFont="system" size="16"/>
                                                 <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                 <integer key="NSUnderline" value="1"/>
                                             </attributes>
@@ -273,18 +328,35 @@
                                     </attributedString>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpv-Fw-MYr">
-                                <rect key="frame" x="42" y="383" width="330" height="74"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Một mã gồm 6 chữ số được gửi đến số điện thoại của bạn, vui lòng nhập trong
-02:00</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dw4-NT-Wfc">
+                                <rect key="frame" x="48" y="764" width="325" height="45"/>
+                                <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="7O5-e3-MbN"/>
+                                </constraints>
+                                <size key="titleShadowOffset" width="10" height="10"/>
+                                <state key="normal" title="Xác minh">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Tj9-Mk-LCK" kind="show" id="1Zq-jL-j13"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="WpQ-xv-FJM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="WpQ-xv-FJM" firstAttribute="bottom" secondItem="Dw4-NT-Wfc" secondAttribute="bottom" constant="53" id="1fc-qS-kQd"/>
+                            <constraint firstItem="Mpv-Fw-MYr" firstAttribute="width" secondItem="Sva-4q-Fpq" secondAttribute="width" multiplier="0.797101" id="2yc-g3-oo2"/>
+                            <constraint firstItem="Q75-4I-qbW" firstAttribute="centerY" secondItem="WpQ-xv-FJM" secondAttribute="centerY" multiplier="1.25" id="Bs7-RW-JQQ"/>
+                            <constraint firstItem="Dw4-NT-Wfc" firstAttribute="leading" secondItem="u30-Wd-I46" secondAttribute="leading" id="Kq6-66-Xw9"/>
+                            <constraint firstItem="u30-Wd-I46" firstAttribute="centerY" secondItem="WpQ-xv-FJM" secondAttribute="centerY" multiplier="1.14" id="Rsa-pf-MSM"/>
+                            <constraint firstItem="Dw4-NT-Wfc" firstAttribute="centerX" secondItem="WpQ-xv-FJM" secondAttribute="centerX" id="UHb-j6-4ah"/>
+                            <constraint firstItem="Mpv-Fw-MYr" firstAttribute="centerY" secondItem="WpQ-xv-FJM" secondAttribute="centerY" id="eyb-BH-zYS"/>
+                            <constraint firstItem="Mpv-Fw-MYr" firstAttribute="centerX" secondItem="WpQ-xv-FJM" secondAttribute="centerX" id="f1I-ot-nIX"/>
+                            <constraint firstItem="u30-Wd-I46" firstAttribute="centerX" secondItem="WpQ-xv-FJM" secondAttribute="centerX" id="uiw-GO-AuS"/>
+                            <constraint firstItem="Q75-4I-qbW" firstAttribute="centerX" secondItem="WpQ-xv-FJM" secondAttribute="centerX" id="v98-Hm-m1Y"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Quên mật khẩu" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="P11-fP-Okd">
                         <barButtonItem key="backBarButtonItem" title="  " id="aLB-KF-o8h"/>
@@ -309,42 +381,60 @@
                                 <rect key="frame" x="65" y="163" width="282" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mật khẩu mới" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4yt-Qf-1PL">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mật khẩu mới" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4yt-Qf-1PL">
                                 <rect key="frame" x="46" y="348" width="325" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="phonePad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Xác nhận mật khẩu" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLf-oc-5G2">
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Xác nhận mật khẩu" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nLf-oc-5G2">
                                 <rect key="frame" x="46" y="390" width="325" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="2a6-l8-PdK">
-                                <rect key="frame" x="46" y="380" width="325" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="2a6-l8-PdK">
+                                <rect key="frame" x="44.5" y="417.5" width="325" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="T9q-nG-fv3"/>
+                                </constraints>
                             </progressView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="LBm-JX-geJ">
-                                <rect key="frame" x="46" y="422" width="325" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="1" translatesAutoresizingMaskIntoConstraints="NO" id="LBm-JX-geJ">
+                                <rect key="frame" x="44.5" y="489" width="325" height="1"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="DB0-vF-CA6"/>
+                                </constraints>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-C0-9PA">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-C0-9PA">
                                 <rect key="frame" x="48" y="764" width="325" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="10" height="10"/>
                                 <state key="normal" title="Xác nhận">
-                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                 </state>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="TQU-7U-oGY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4yt-Qf-1PL" firstAttribute="centerX" secondItem="TQU-7U-oGY" secondAttribute="centerX" id="4fL-FR-qFK"/>
+                            <constraint firstItem="2a6-l8-PdK" firstAttribute="centerY" secondItem="TQU-7U-oGY" secondAttribute="centerY" multiplier="0.88" id="8KH-Xs-45C"/>
+                            <constraint firstItem="nLf-oc-5G2" firstAttribute="centerY" secondItem="TQU-7U-oGY" secondAttribute="centerY" id="Hy9-JG-eEW"/>
+                            <constraint firstItem="LBm-JX-geJ" firstAttribute="width" secondItem="NHf-fJ-LTA" secondAttribute="width" multiplier="0.785024" id="Rq8-z1-jqg"/>
+                            <constraint firstItem="nLf-oc-5G2" firstAttribute="height" secondItem="NHf-fJ-LTA" secondAttribute="height" multiplier="0.0379464" id="SGm-wm-MUt"/>
+                            <constraint firstItem="2a6-l8-PdK" firstAttribute="centerX" secondItem="TQU-7U-oGY" secondAttribute="centerX" id="W1G-xH-gqF"/>
+                            <constraint firstItem="4yt-Qf-1PL" firstAttribute="height" secondItem="NHf-fJ-LTA" secondAttribute="height" multiplier="0.0379464" id="Y0I-gw-ALK"/>
+                            <constraint firstItem="4yt-Qf-1PL" firstAttribute="centerY" secondItem="TQU-7U-oGY" secondAttribute="centerY" multiplier="0.85" id="Ye4-Oc-EpV"/>
+                            <constraint firstItem="LBm-JX-geJ" firstAttribute="centerX" secondItem="TQU-7U-oGY" secondAttribute="centerX" id="ccq-Ra-y3P"/>
+                            <constraint firstItem="nLf-oc-5G2" firstAttribute="width" secondItem="NHf-fJ-LTA" secondAttribute="width" multiplier="0.785024" id="coh-YH-rVe"/>
+                            <constraint firstItem="2a6-l8-PdK" firstAttribute="width" secondItem="NHf-fJ-LTA" secondAttribute="width" multiplier="0.785024" id="d4n-dm-i5K"/>
+                            <constraint firstItem="LBm-JX-geJ" firstAttribute="centerY" secondItem="TQU-7U-oGY" secondAttribute="centerY" multiplier="1.03" id="mfn-RJ-Cld"/>
+                            <constraint firstItem="nLf-oc-5G2" firstAttribute="centerX" secondItem="TQU-7U-oGY" secondAttribute="centerX" id="rl6-p4-eCG"/>
+                            <constraint firstItem="4yt-Qf-1PL" firstAttribute="width" secondItem="NHf-fJ-LTA" secondAttribute="width" multiplier="0.785024" id="wth-eV-Spc"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Quên mật khẩu" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="LNs-hD-a6g">
                         <barButtonItem key="backBarButtonItem" title="  " id="ifw-fW-8vx"/>
@@ -360,5 +450,17 @@
     </scenes>
     <resources>
         <image name="186486295_110938954500785_2492957877677836606_n 1" width="283" height="150"/>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
