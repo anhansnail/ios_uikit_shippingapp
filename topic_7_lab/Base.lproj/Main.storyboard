@@ -407,10 +407,12 @@
                                     <constraint firstAttribute="height" constant="1" id="DB0-vF-CA6"/>
                                 </constraints>
                             </progressView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-C0-9PA">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSf-C0-9PA">
                                 <rect key="frame" x="48" y="764" width="325" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1450980392" green="0.71764705880000002" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="MdV-VY-HsG"/>
+                                </constraints>
                                 <size key="titleShadowOffset" width="10" height="10"/>
                                 <state key="normal" title="Xác nhận">
                                     <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
@@ -420,6 +422,7 @@
                         <viewLayoutGuide key="safeArea" id="TQU-7U-oGY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hSf-C0-9PA" firstAttribute="centerX" secondItem="TQU-7U-oGY" secondAttribute="centerX" id="0Kg-Cp-TJu"/>
                             <constraint firstItem="4yt-Qf-1PL" firstAttribute="centerX" secondItem="TQU-7U-oGY" secondAttribute="centerX" id="4fL-FR-qFK"/>
                             <constraint firstItem="2a6-l8-PdK" firstAttribute="centerY" secondItem="TQU-7U-oGY" secondAttribute="centerY" multiplier="0.88" id="8KH-Xs-45C"/>
                             <constraint firstItem="nLf-oc-5G2" firstAttribute="centerY" secondItem="TQU-7U-oGY" secondAttribute="centerY" id="Hy9-JG-eEW"/>
@@ -431,6 +434,8 @@
                             <constraint firstItem="LBm-JX-geJ" firstAttribute="centerX" secondItem="TQU-7U-oGY" secondAttribute="centerX" id="ccq-Ra-y3P"/>
                             <constraint firstItem="nLf-oc-5G2" firstAttribute="width" secondItem="NHf-fJ-LTA" secondAttribute="width" multiplier="0.785024" id="coh-YH-rVe"/>
                             <constraint firstItem="2a6-l8-PdK" firstAttribute="width" secondItem="NHf-fJ-LTA" secondAttribute="width" multiplier="0.785024" id="d4n-dm-i5K"/>
+                            <constraint firstItem="hSf-C0-9PA" firstAttribute="leading" secondItem="TQU-7U-oGY" secondAttribute="leading" constant="48" id="jMf-au-ItQ"/>
+                            <constraint firstItem="TQU-7U-oGY" firstAttribute="bottom" secondItem="hSf-C0-9PA" secondAttribute="bottom" constant="53" id="jf3-Y7-TDq"/>
                             <constraint firstItem="LBm-JX-geJ" firstAttribute="centerY" secondItem="TQU-7U-oGY" secondAttribute="centerY" multiplier="1.03" id="mfn-RJ-Cld"/>
                             <constraint firstItem="nLf-oc-5G2" firstAttribute="centerX" secondItem="TQU-7U-oGY" secondAttribute="centerX" id="rl6-p4-eCG"/>
                             <constraint firstItem="4yt-Qf-1PL" firstAttribute="width" secondItem="NHf-fJ-LTA" secondAttribute="width" multiplier="0.785024" id="wth-eV-Spc"/>
